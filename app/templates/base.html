@@ -1,0 +1,19 @@
+<html>
+
+    <head>
+        {% if title %}
+        <title>{{ title }} - Order Up!</title>
+        {% else %}
+        <title>Welcome to Order Up!</title>
+        {% endif %}
+    </head>
+
+    <body>
+        {% if not current_user.is_anonymous %}
+        <form method="post" action="{{ url_for('session.logout') }}" id="logout"></form>
+        <button type="submit" form="logout">Logout</button>
+        {% endif %}
+        {% block content %}{% endblock %}
+    </body>
+
+</html>

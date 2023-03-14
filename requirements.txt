@@ -1,0 +1,8 @@
+Flask
+python-dotenv
+SQLAlchemy
+Flask-SQLAlchemy
+psycopg2-binary
+WTForms
+Flask-WTF
+Flask-Login
